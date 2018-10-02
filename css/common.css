@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* Common */
+
+/* 텍스트 지정 색깔 */
+
+::selection {
+
+    background:#df0029;                
+
+    color: #FFF;
+
+    text-shadow: none;
+
+}
+
+::-moz-selection {
+
+    background:#df0029;
+
+    color: #FFF;
+
+    text-shadow: none;
+
+}
+
+::-webkit-selection {
+
+    background:#df0029;
+
+    color: #FFF;
+
+    text-shadow: none;
+
+}
+
+
+.clearfix::after {
+	content:'';
+	display: block;
+	clear: both;
+}
+.wrapper {
+	max-width:1280px;
+    margin:0 auto;
+    position: relative
+}
+.hide {
+	display: none
+}
+
+html {
+    font-size:;
+}
+body {    
+   font-family: 'Gothic A1', sans-serif;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size:18px;
+    color:#363636;
+    font-weight: 300;
+}
+/*sub common*/
+#sub_visual .sv{
+    height:268px; width:100%; padding-top:140px; position: relative;
+    background:url(../images/subvisual_1.png) center bottom no-repeat;color:#fff;
+    text-align: center;
+}
+#sub_visual .brand{
+    height:268px; width:100%; padding-top:140px; position: relative;
+    background:url(../images/sub2/subvisual_2.jpg) center bottom no-repeat;color:#fff;
+    text-align: center;
+}
+#sub_visual .sv .tit{
+    font-size:50px; font-weight: 600; margin-top:90px; position:relative; top:20px; opacity:0;
+}
+#sub_visual .sv .stit{
+    opacity: 0.5;font-size:25px; margin-top: 10px; position:relative; top:20px; opacity:0
+}
+
+#sub_visual .sban_menu{
+    border-bottom:1px solid #d7d7d7; height:58px; text-align: center;
+}
+#sub_visual .sban_menu .border::after{
+    content: ''; display: inline-block; margin-left:20px; margin-right:20px; width:1px; height:15px; background-color:rgba(183,183,183,0.3)
+}
+#sub_visual .sban_menu .wrapper>li{
+   float: left; line-height: 58px; color:#363636; font-size:16px; font-weight: 500; 
+}
+#sub_visual .sban_menu .wrapper>li .arr{
+    margin: 20px 10px; /*transform: rotate(180deg)*/
+}
+#sub_visual .sban_menu .wrapper>li:nth-child(1){
+    padding:0 20px 0 0;
+}
+#sub_visual .sban_menu .info_list{
+    position: absolute; display: none; margin-left: -20px; z-index: 50
+}
+#sub_visual .sban_menu .info_list li{
+    float:none; padding: 0 20px; color:#fff; font-weight: 300; font-size:15px; cursor: pointer;
+    background-color: rgba(50,50,50,0.9); border-bottom: 1px solid rgba(255,255,255,0.5); transition:all 0.3s;
+}
+#sub_visual .sban_menu .info_list li:hover{
+    color:#fff; background-color:#808080;
+}
+#content .con{
+    padding:50px 0; width:100%;
+}
+#content .con .tit{
+    text-align: left; font-size:20px; font-weight: 400;
+}
+#content .con .tit::before{
+    content: '';display: block; height:3px; width:78px; background-color:#8d8d8d; margin-bottom:15px;
+    
+}
+#content .con .right{
+    padding-left:20%;
+}
+
+#content .fff{
+    color:#fff;
+}
+#content .big{
+    text-align: center; font-size:22px; color:#777777;font-weight: 400; padding:20px 0;
+}
+
+#content .ttit{
+    font-size:22px; font-weight: 500; padding-top:10px; line-height: 1.5;
+}
+#content .sttit{
+    font-size:20px; font-weight: 300; padding-top:5px; 
+}
+#content .desc{
+    margin: 0 auto; font-size:16px; line-height: 1.5;   padding-top:5px; 
+}
+.btn-gnb {display: none;}
+.btn-close{display: none;}
+
+
+
+
+
+/*** header ***/
+#header{ background-color:#fff;
+     position: absolute; width:100%;  z-index: 5;
+}
+#header .dHead{
+    background-color:#fafafa;
+    height:30px;  padding-top:10px;
+    font-size:14px;color:#999999; 
+}
+
+#header .dHead .left{
+    float:left; padding-left:10%;
+}
+#header .dHead .toplink{
+    float: right; padding-right:10%;
+}
+#header .dHead .toplink li{
+    float:left; margin-left: 15px;
+ 
+}
+#header .gnb_wrap {
+ z-index: 50; 
+}
+#header .gnb_wrap .logo{
+    float:left; margin-top:25px;
+}
+#header .gnb_wrap .gnb{
+     float: right; text-align: center; 
+}
+#header .gnb>ul>li{
+    float:left; 
+}
+#header .gnb>ul>li .stit{
+    line-height: 100px;
+    font-size:20px; font-weight: 700;  padding:0 10px;
+}
+#header .gnb_wrap .gnb .stit::after{
+    content: "";
+    display:block; 
+    width:90px; height:5px; background-color:#d60013; margin:0 auto;
+    margin-top:-5px; opacity:0; transition: all 0.2s;
+}
+
+#header .gnb_wrap .gnb li:hover .stit::after{
+    opacity: 1;
+}
+#header .gnb>ul>li .smenu_wrap{
+    height:238px;  display: none; 
+}
+#header .gnb>ul>li .smenu_wrap .smenu{
+        font-weight:400;
+        margin-top:30px; 
+        line-height: 2; font-size:18px;
+}
+#header .nav_bg{
+    background-color:#fafafa;
+    position:absolute; /*menu랑 겹치기 위해*/ 
+    top:140px; width:100%; height: calc(100% - 140px); 
+}
+#header .gnb>ul>li .smenu_wrap .smenu li:hover{
+    color:#d60013;
+}
+/*** footer ***/
+#footer{
+    background-color:#dddddd; width:100%; margin-top: 120px; height:300px;  padding-top:50px;
+}
+#footer .flogo{width:20%; float:left; padding:2%; box-sizing: border-box;} 
+#footer ul{
+    width:80%; float:right; padding:15px; box-sizing: border-box;
+}
+#footer ul li{
+   display: inline-block; 
+}
+
+#footer .site_map li{
+    font-size:15px; padding-right:3%; font-weight: 400;
+}
+
+#footer .site_map li:nth-child(7){color:#5b3fb8;}
+#footer .site_map li::after{
+    content: ''; display: inline-block; height:9px; width:1px; background-color:#b7b7b7; margin-left: 30px; margin-bottom: 3px;
+}
+#footer .site_map li:nth-child(7):after, #footer .co_info li:nth-child(5)::after{ display: none;}
+#footer .co_info li{
+    padding-right:20px; font-size:12px; line-height: 2;
+}
+#footer .co_info li::after{
+    content: ''; display: inline-block; height:9px; width:1px;
+    background-color:#b7b7b7; margin-left: 20px; margin-bottom: 3px;
+}
+#footer .baro {
+    padding-top:20px;
+}
+#footer .baro>li {
+    width:250px; height:40px; border:1px solid #898989; line-height: 40px;
+    font-size:15px; color:#4e4e4e; text-indent: 20px; margin-right:50px;
+    position: relative; cursor: pointer; transition:all 0.3s;}
+#footer .baro li{
+    background:url(../images/plus.png) no-repeat 210px top; 
+}
+#footer .baro li.rot{
+    background-color:rgba(112,112,112,0.8);
+    color:#fff; background-position: 210px bottom;
+}
+
+
+#footer .list{overflow: hidden; position: absolute; bottom:40px;width:100%;
+    background-color:rgba(112,112,112,0.9); display: none;}
+#footer .list li{
+    background:none;
+    margin-right:0; color:#dddddd; font-size:14px; width:100%; line-height: 40px;
+    border-bottom:1px dotted rgba(255,255,255,0.5);
+}
+#footer .baro li .list li:nth-child(1){margin-left: -20px;}
+
+#footer .copy{
+    background-color:#313131; width:100%; height:50px; padding:10px 0;text-align: center; color:#dddddd; font-size:12px;  margin-top:300px;
+}
+
+
+/*스크롤 탑*/
+.top{
+    position:fixed; bottom: 15%; right:5%;
+    width:50px; height:50px; 
+    background-color:rgba(0,0,0,0.4); color:#fff; text-align: center;
+    line-height: 35px;cursor: pointer; transform: rotate(-90deg);
+
+}
+
+.top p{
+    opacity:0.8
+}
+
+
+
+

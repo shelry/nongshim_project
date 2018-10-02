@@ -1,0 +1,43 @@
+#content ul {
+    padding:50px 0;
+}
+
+#content .con .best_list > li{
+    padding-top:20px; width:33%;
+    display: inline-block; cursor: pointer;
+    position: relative; text-align: center;
+}
+#content .con .best_list > li > a >img{width:100%;}
+#content .con .best_list > li >img{width:100%;}
+#content .con .best_list li:hover .arr{
+    background-color:#ec870c;
+}
+#content .con .list_desc{
+    position: absolute; bottom:1%; left: 50%; transform: translateX(-50%);
+}
+#content .con .list_desc .ttit{display: inline-block; position: relative; padding:0;}
+#content .con .arr{
+    display: inline-block; width:23px; height:23px; background-color:#cccccc; border-radius: 50%; 
+     position: absolute; right:-35px; top:6px; transition: all 0.3s;
+}
+#content .all_list{font-size:0;}
+#content .all_list li{
+    display: inline-block; padding-top:20px;
+    width:20%; text-align: center; height:220px; font-weight: 500;
+    font-size:18px; position: relative; overflow: hidden;
+}
+
+#content .all_list li::after{
+    content:'상세정보'; background-color:rgba(234,135,35,0.8); display: block; width:210px; height:210px; z-index: 150;
+    position: absolute;top:230px; left:50%;transform: translateX(-50%); border-radius: 50%; opacity: 0;
+    line-height: 210px; color:#fff; font-weight: 500; font-size:20px; cursor: pointer; transition: all 0.3s;
+}
+#content .all_list li:hover::after{
+    top:0; opacity: 1; box-shadow: 0 0 3px rgba(5,5,5,0.5); 
+}
+
+.w3-center{text-align: center; font-weight: 500; font-size:16px; color:#777777; padding-bottom: 50px;}
+.w3-center .w3-bar .w3-button{display: inline-block;width:30px;height:30px; line-height: 30px;}
+.w3-center .w3-bar .w3-button:hover{color:#ec870c;}
+.befAft{display: inline-block;width:30px;height:20px;}
+.w3-bar-item{color:#ec870c}

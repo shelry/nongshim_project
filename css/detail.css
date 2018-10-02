@@ -1,0 +1,59 @@
+.right>img{width:300px; }
+.bor{border-bottom: 3px solid #ea8723; padding-bottom: 30px;}
+.detail{
+    padding-left:5%; vertical-align: top;
+    display: inline-block;
+    width:54%;
+}
+table{
+      width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    word-break: break-all;
+}
+tbody{
+        display: table-row-group;
+    border-color: inherit;
+    border-top:2px solid #8d8d8d;
+}
+th{    height: 50px;
+    color: #333;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ebebeb;
+    text-indent: 5px;}
+th::after{
+    content: '';
+    display: block; width:1px; height:18px; position: absolute; right:0; bottom:15px;
+    background-color:#ebebeb;
+}
+td{ padding: 0 30px;
+    height: 50px;
+    color: #666;
+    font-size: 16px;
+    line-height: 18px;
+    vertical-align: middle;
+        border-bottom: 1px solid #ebebeb;
+    text-align: left;}
+.btn{text-align: center; padding-top: 50px;}
+.btn a{
+    display: inline-block; 
+    width:40%; height:50px; background-color:#ea8723;  line-height: 50px; color:#fff;
+}
+
+.right .decs{
+    text-align: right; font-size:15px; 
+}
+.recipe_list li{
+    display: inline-block;
+}
+
+.w3-center{text-align: center; font-weight: 500; font-size:16px; padding-top:20px;}
+.w3-center .w3-bar .w3-button{display: inline-block;width:30px;height:30px; line-height: 30px;}
+.w3-center .w3-bar .w3-button:hover{color:#ec870c;}
+.befAft{display: inline-block;width:30px;height:20px;}
+.w3-bar-item{color:#ec870c}

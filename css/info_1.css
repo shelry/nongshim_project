@@ -1,0 +1,22 @@
+#content .important{
+    background:url(../images/subban_2.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+#content .three {margin-right: 100px;}
+#content .three li{
+    width:300px; height:300px; padding:50px; background-color:rgba(255,255,255,0.3); border-radius: 50%; display: inline-block; text-align: center;margin: 20px;
+    box-sizing: border-box;
+}
+#content .vision_list{
+    margin-right: 100px; 
+    }
+#content .vision_list li{
+    display: inline-block; padding:0 6%; text-align: center; padding-bottom:50px;
+}
+#content .vision_list>.desc{
+    color:#777777;
+}
+.mobile_only{display: none;}
+
+

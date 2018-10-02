@@ -1,0 +1,43 @@
+#content .col li{
+    display: inline-block; width:45%; vertical-align: top; padding: 20px 0; line-height: 1.5; color:#777777;
+}
+#content .important{
+    background:url(../images/sub1/ssc_bg.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+#content .vision_list{
+    margin-right: 100px; font-size: 0; width:100%; box-sizing: border-box;}
+#content .vision_list li{
+    display: inline-block; width:20%; text-align: center; padding:10px 0; vertical-align: top; color:#777777;
+}
+#content .vision_list>.desc{
+    color:#777777;
+}
+#content .four{font-size: 0; margin-left:30%;}
+#content .four li{
+    display: inline-block; width:20%; padding:20px; text-align: center; vertical-align: top;box-sizing: border-box;
+}
+#content .con .con3_list{padding-top: 20px; box-sizing: border-box;font-size: 0}
+#content .con .con3_list>li{
+    display: inline-block; width: 16%; text-align: center;}
+#content .con .con3_list>img{margin-left:-25px; width:100%;padding-top:20px}
+#content .con> .vision_list>img{
+    position: relative; width:100%;
+}
+#content .con .vision_list .baro_home{
+    position:absolute; top:69%; right:110px; font-size:18px;font-weight: 400; color:#fff;
+}
+
+.btn_wrap {padding-top:50px; position: relative; width:100%; overflow: hidden;}
+/*.btn_wrap .homepage{
+    font-size: 18px; position: absolute; right:50%; top:185px; color: #fff; transition:all 0.4s; cursor: pointer;
+}
+.btn_wrap .arr{
+    position: absolute; right:8%; top:58%; transform: translateY(-50%); opacity:0; transition:all 0.6s;
+}
+
+.btn_wrap:hover .homepage{
+    right:120px;
+}
+.btn_wrap:hover .arr{opacity: 1}*/
